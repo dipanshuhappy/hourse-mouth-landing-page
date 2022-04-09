@@ -1,25 +1,34 @@
+import { ThemeProvider } from '@mui/material';
+import createTheme from '@mui/material/styles/createTheme';
 import React from 'react';
-import logo from './assets/logo.svg';
 import './App.css';
+import TopBar from './components/TopBar/TopBar';
+const theme = createTheme({
+  palette: {
+      primary: {
+          main: '#6E3CBC',
+          light: "#FFFFFF"
+      },
+      secondary: {
+          main: '#fff',
+      },
+      text: {
+          primary: '#6E3CBC',
+      }
+  },
+  typography: {
+      fontFamily: 'Poppins',
 
+  },
+
+});
 function App() {
   return (
+    <ThemeProvider theme={theme}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TopBar/>
     </div>
+    </ThemeProvider>
   );
 }
 
