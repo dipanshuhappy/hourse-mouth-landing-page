@@ -28,6 +28,8 @@ function App() {
     <ThemeProvider theme={theme}>
     <div className="App">
       <TopBar/>
+      <div className='circle'>
+      </div>
       <BookingSession/>
     </div>
     </ThemeProvider>
