@@ -1,6 +1,6 @@
 import { Box, Button } from '@mui/material';
 import React from 'react';
-import logo from "../../assets/logo.png"
+import logo from "../assets/logo.png"
 function TopBar() {
     return (
         <Box sx={{
@@ -17,12 +17,14 @@ function TopBar() {
                 alignSelf:"center"
             }}>
                 <Button style={{
-                    borderRadius:"8px"
+                    borderRadius:"8px",
+                    padding:"8px"
                 }}  variant="outlined">LOGIN</Button>
                 <Button 
                 style={{
                     borderRadius:"8px",
-                    marginLeft:"8px"
+                    marginLeft:"8px",
+                    padding:"8px"
                 }} variant="contained">SIGN UP</Button>
             </Box>
 

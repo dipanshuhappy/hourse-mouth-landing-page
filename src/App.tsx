@@ -2,7 +2,8 @@ import { ThemeProvider } from '@mui/material';
 import createTheme from '@mui/material/styles/createTheme';
 import React from 'react';
 import './App.css';
-import TopBar from './components/TopBar/TopBar';
+import BookingSession from './components/BookingSession';
+import TopBar from './components/TopBar';
 const theme = createTheme({
   palette: {
       primary: {
@@ -27,6 +28,7 @@ function App() {
     <ThemeProvider theme={theme}>
     <div className="App">
       <TopBar/>
+      <BookingSession/>
     </div>
     </ThemeProvider>
   );
