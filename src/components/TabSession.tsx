@@ -11,7 +11,14 @@ function TabSession() {
         setValue(newValue)
     }
     return (
-        <Box>
+        <Box style={{
+          minHeight: "80vh",
+    backgroundColor:" rgb(212, 207, 255)",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center"
+        }}>
         <Tabs value={value} onChange={toggleValue} centered>
             <Tab label="Item One" />
             <Tab label="Item Two" />
