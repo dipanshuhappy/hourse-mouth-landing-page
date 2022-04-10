@@ -1,56 +1,53 @@
 import { Box, Button, OutlinedInput, TextField } from '@mui/material';
 import React from 'react';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import bookingSessionImage from "../assets/student_mentor_interacting.png"
 function BookingSession() {
     const isMobile= ! useMediaQuery('(min-width:600px)')
     return (
-        
-        <Box display="flex" flexDirection="column">
-        <div style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center'
+        <Box sx={{
+            display:"flex"
         }}>
-            <p style={{
-                fontSize: '4rem',
-                textAlign: isMobile?'center':'justify',
-                margin: "0px",
-                fontWeight: 'normal',
-                color: "whitesmoke"
+            <div
+                style={
+                    {
+                        width:"50%",
+                        textAlign:"left",
+                        margin:"auto"
+                    }
+                }>
+                <p style={{
+                    margin: "0px",
+                    fontFamily: "Poppins",
+                    lineHeight: 1.5,
+                    color: "rgb(110, 60, 188)",
+                    fontSize: "4rem",
+                    fontWeight: 800
+                }}>
+                    Understand the on ground reality of your university
+                </p>
+                <p style={{
+                    fontFamily: "Poppins",
+                    fontSize: "2rem",
+                    
+                }}>
+                    Book one on one mentoring sessions
+                    with students around the world
+                </p>
+            <Button style={{
+                    borderRadius:"8px",
+                    padding:"8px"
+                }}  variant="outlined">Book A Session</Button>
+                <Button 
+                style={{
+                    borderRadius:"8px",
+                    marginLeft:"8px",
+                    padding:"8px"
+                }} variant="contained">Become A Mentor</Button>
+            </div>
 
-            }}>
-                Get Ready to <br />  get and Give Gifts
-            </p>
-            <h3 style={{
-                textAlign: "justify",
-                marginLeft: "18%",
-                alignSelf: 'baseline',
-                fontWeight: 'bold',
-                color: "#7e3aba",
-                fontSize: "1.5rem"
-            }}>
-                Get Notified When lauched
-            </h3>
-        </div>
-        <div style={{
-            width: "100%",
-            display:"flex",
-            justifyContent:"center",
-            marginLeft:"16px",
-            alignItems:"center"
-        }}>
-            <Button variant="contained"  style={{
-                        backgroundColor: "#8633c9",
-                        color: "whitesmoke",
-                        height: "52px",
-                        borderRadius: '16px',
-                        width: "25%"
-                        
-                    }}
-                    >Notify Me</Button>
-        </div>
-        
-    </Box>
+            <img src={bookingSessionImage}/>
+        </Box>
     );
 }
 

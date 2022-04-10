@@ -3,6 +3,7 @@ import createTheme from '@mui/material/styles/createTheme';
 import React from 'react';
 import './App.css';
 import BookingSession from './components/BookingSession';
+import TabSession from './components/TabSession';
 import TopBar from './components/TopBar';
 const theme = createTheme({
   palette: {
@@ -31,6 +32,7 @@ function App() {
       <div className='circle'>
       </div>
       <BookingSession/>
+      <TabSession/>
     </div>
     </ThemeProvider>
   );
