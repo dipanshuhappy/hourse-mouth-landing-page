@@ -5,6 +5,11 @@ import './App.css';
 import BookingSession from './components/BookingSession';
 import TabSession from './components/TabSession';
 import TopBar from './components/TopBar';
+import TopMentors from './components/TopMentors';
+import hourseMouthInfo  from "./assets/hourse_mouth_info.png"
+import startUpImage from "./assets/start_up_india_logo.png"
+import hactchery from "./assets/bennett_hactchery_logo.png"
+import { width } from '@mui/system';
 const theme = createTheme({
   palette: {
       primary: {
@@ -33,6 +38,16 @@ function App() {
       </div>
       <BookingSession/>
       <TabSession/>
+      <TopMentors/>
+      <img src={hourseMouthInfo}/>
+      <div style={{
+        display:"flex",
+        justifyContent: "space-around",
+        alignItems: "center"
+      }}>
+        <img width="30%"  src={startUpImage}/>
+        <img height="30%" width="30%" src={hactchery}/>
+      </div>
     </div>
     </ThemeProvider>
   );
