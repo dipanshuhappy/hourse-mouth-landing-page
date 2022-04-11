@@ -1,18 +1,15 @@
 import { Box, Button } from '@mui/material';
 import React from 'react';
 import logo from "../assets/logo.png"
+import styles from "../styles/TopBarCss"
 function TopBar() {
+    const classes=styles()
     return (
-        <Box sx={{
-            display:"flex",
-            justifyContent:"space-between",
-            margin:"32px",
-            marginTop:"4px"
-        }}>
+        <Box className={classes.roo}>
             <img style={{
                 height:"64px"
 
-            }} src={logo} />
+            }} src={logo} /> 
             <Box sx={{
                 alignSelf:"center"
             }}>
@@ -22,8 +19,6 @@ function TopBar() {
                 }}  variant="outlined">LOGIN</Button>
                 <Button 
                 style={{
-                    borderRadius:"8px",
-                    marginLeft:"8px",
                     padding:"8px"
                 }} variant="contained">SIGN UP</Button>
             </Box>

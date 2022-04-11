@@ -4,13 +4,13 @@ import React from 'react';
 import './App.css';
 import BookingSession from './components/BookingSession';
 import TabSession from './components/TabSession';
-import TopBar from './components/TopBar';
+import TopBar from './screens/TopBar';
 import TopMentors from './components/TopMentors';
 import hourseMouthInfo  from "./assets/hourse_mouth_info.png"
 import startUpImage from "./assets/start_up_india_logo.png"
 import hactchery from "./assets/bennett_hactchery_logo.png"
 import { width } from '@mui/system';
-import Footer from './components/Footer';
+import Footer from './screens/Footer';
 const theme = createTheme({
   palette: {
       primary: {
