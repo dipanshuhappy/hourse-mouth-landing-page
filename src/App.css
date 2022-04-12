@@ -30,11 +30,12 @@
 .circle{
     position: absolute;
     border-radius: 50%;
-    background-color: rgb(212, 207, 255);
+    background-color: #d4cfff;
     width: 10rem;
     height: 10rem;
     left: -3%;
-  
+    z-index: -1;
+    margin-top: 64px;
 }
 
 @keyframes App-logo-spin {

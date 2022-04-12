@@ -33,9 +33,8 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
     <div className="App">
+    <div className='circle'></div>
       <TopBar/>
-      <div className='circle'>
-      </div>
       <BookingSession/>
       <TabSession/>
       <TopMentors/>

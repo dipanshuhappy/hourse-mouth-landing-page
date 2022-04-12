@@ -1,0 +1,39 @@
+.root {
+    display: flex;
+}
+
+.mainDiv {
+    text-align: left;
+    align-self: center;
+    margin-left: 128px;
+}
+
+.title {
+    margin: 0px;
+    line-height: 1.5;
+    color: rgb(110, 60, 188);
+    font-size: 4rem;
+    font-weight: 400;
+}
+.image{
+    margin-bottom: 64px;
+}
+.subTitle {
+    font-size: 2rem;
+}
+
+.button {
+    padding: 8px;
+    border-radius: 12px !important;
+    font-size: large !important;
+    font-weight: bold !important;
+}
+@media (max-width:860px){
+    .mainDiv{
+        width: 100%;
+    }
+   .title{
+       font-weight: bold;
+       font-size: 2rem;
+   } 
+}
