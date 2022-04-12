@@ -1,0 +1,15 @@
+.root{
+    display: flex;
+    justify-content: space-between;
+    margin: 16px;
+    margin-top: 4px;
+    width: 90%;
+}
+.buttonContainer{
+    align-self: center;
+}
+.button{
+    border-radius: 12px !important;
+    font-size: large !important;
+    font-weight: bold !important;
+}
