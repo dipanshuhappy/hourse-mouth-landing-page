@@ -2,7 +2,7 @@ import { ThemeProvider } from '@mui/material';
 import createTheme from '@mui/material/styles/createTheme';
 import React from 'react';
 import './App.css';
-import BookingSession from './components/BookingSession';
+import BookingSession from './screens/BookingSession';
 import TabSession from './components/TabSession';
 import TopBar from './screens/TopBar';
 import TopMentors from './components/TopMentors';

@@ -6,9 +6,7 @@ import styles from "../styles/BookingSession.module.css"
 function BookingSession() {
     const isMobile = !useMediaQuery('(min-width:600px)')
     return (
-        <Box className={styles.root} sx={{
-            display: "flex"
-        }}>
+        <Box className={styles.root}>
             <Box className={styles.mainDiv}>
                 <p className={styles.title}>
                     Understand the on ground reality of your university
