@@ -13,7 +13,7 @@ function TabSession() {
     return (
         <Box className={styles.root}>
             <Tabs value={value} onChange={toggleValue} centered>
-                <Tab label="For students & PARENTS" />
+                <Tab label="Students & PARENTS" />
                 <Tab label="For COLLEGE STUDENTS & ALUMNI" />
             </Tabs>
             <TabPanel value={value} index={0}>
