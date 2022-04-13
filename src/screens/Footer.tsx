@@ -11,7 +11,7 @@ function Footer() {
                 <Link href="#" underline="none">Book a session</Link>
                 <Link href="#" underline="none">Terms & Conditions</Link>
 
-                <Box display={"flex"} width={100} alignSelf="center" justifyContent="space-between" sx={{ ['@media (max-width:470px)']: { fontSize: 15, textAlign: "center", width: "30vw", marginTop: 2, marginBottom: 2 } }}>
+                <Box display={"flex"} width={100} alignSelf="center" justifyContent="space-between" sx={{ '@media (max-width:470px)': { fontSize: 15, textAlign: "center", width: "30vw", marginTop: 2, marginBottom: 2 } }}>
                     <Instagram color={"primary"} onClick={() => { window.open("https://instagram.com/horsesmouth.in?utm_medium=copy_link") }} style={{ cursor: "pointer" }} />
                     <LinkedIn color={"primary"} onClick={() => { window.open("https://www.linkedin.com/company/horse-s-mouth") }} style={{ cursor: "pointer" }} />
                     <Twitter color={"primary"} />

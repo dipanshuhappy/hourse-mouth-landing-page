@@ -6,10 +6,10 @@ import styles from "../styles/ImageInfoSession.module.css"
 function ImageInfoSession() {
     return (
         <div className={styles.root}>
-            <img width="80%" height="80%" src={hourseMouthInfo} />
+            <img alt="Image" width="80%" height="80%" src={hourseMouthInfo} />
             <div className={styles.supportingBrands}>
-                <img width="30%" src={startUpImage} />
-                <img height="30%" width="30%" src={hactchery} />
+                <img alt="Image" width="30%" src={startUpImage} />
+                <img alt="Image" height="30%" width="30%" src={hactchery} />
             </div>
         </div>
     );

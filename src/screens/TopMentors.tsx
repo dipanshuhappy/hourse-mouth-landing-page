@@ -1,4 +1,4 @@
-import { Box, useMediaQuery } from '@mui/material';
+import { Box} from '@mui/material';
 import React, { useState } from 'react';
 import MentorsCard from '../components/MentorsCard';
 import { MentorInterface } from '../models/MentorInterface';

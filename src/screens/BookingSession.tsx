@@ -1,4 +1,4 @@
-import { Box, Button, OutlinedInput, TextField } from '@mui/material';
+import { Box, Button } from '@mui/material';
 import React from 'react';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import bookingSessionImage from "../assets/student_mentor_interacting.png"
@@ -22,7 +22,7 @@ function BookingSession() {
                         marginLeft: "8px",
                     }} variant="contained">Become A Mentor</Button>
             </Box>
-            {isMobile ? null : <img className={styles.image} src={bookingSessionImage} />}
+            {isMobile ? null : <img alt="Image" className={styles.image} src={bookingSessionImage} />}
         </Box>
     );
 }
