@@ -3,36 +3,21 @@ import React from 'react';
 import Tick from '../assets/Tick';
 import HorseMouthChip from './HorseMouthChip';
 import image from "../assets/anuj.png"
-function MentorsCard() {
+import styles from "../styles/MentorsCard.module.css"
+import { MentorInterface } from '../models/MentorInterface'
+function MentorsCard({name,avatar,collegeName,branch,specialization,type}:MentorInterface) {
     return (
-       <Paper style={{
-           width:"270px",
-           height:"200px",
-           position:"relative"
-       }}>
-           <Avatar alt="Remy Sharp" src={image} sx={{
-               width:"75px",
-               height:"75px",
-               position:"absolute",
-               zIndex:2,
-               top:"50%",
-               left:"-35px"
-
-           }}/>
-           <Grid container sx={{
-               padding:"16px 16px 16px 40px"
-           }} >
-            
-           <p>Anuj Jain</p>
-           <Tick width="32px" height="32px" />
+       <Paper className={styles.root}>
+           <Avatar alt="Remy Sharp" src={avatar} className={styles.avatar}/>
+           <Grid container className={styles.card} >
+           <p className={styles.name}>{name}</p>
+           <Tick className={styles.tickIcon} width="16px" height="16px" />
            <HorseMouthChip style={{
                width:"100%"
-           }} label="University of Waterloo"  />
-           <HorseMouthChip label="University of Waterloo" />
-           <HorseMouthChip label="University of Waterloo"/>
-           <HorseMouthChip label="Uni" />
-
-
+           }} label={collegeName}  />
+           <HorseMouthChip label={branch} />
+           <HorseMouthChip label={specialization}/>
+           <HorseMouthChip label={type}/>
            </Grid>
        </Paper>
     );

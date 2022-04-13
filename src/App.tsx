@@ -5,7 +5,7 @@ import './App.css';
 import BookingSession from './screens/BookingSession';
 import TabSession from './screens/TabSession';
 import TopBar from './screens/TopBar';
-import TopMentors from './components/TopMentors';
+import TopMentors from './screens/TopMentors';
 import hourseMouthInfo  from "./assets/hourse_mouth_info.png"
 import startUpImage from "./assets/start_up_india_logo.png"
 import hactchery from "./assets/bennett_hactchery_logo.png"

@@ -1,0 +1,29 @@
+.root {
+    width: 270px;
+    height: 200px;
+    position: relative;
+    border-radius: 12px !important;
+}
+
+.avatar {
+    width: 75px !important;
+    height: 75px !important;
+    position: absolute !important;
+    z-index: 2 !important;
+    top: 35% !important;
+    left: -35px !important;
+}
+
+.card {
+    padding-left: 40px !important;
+    padding-right: 10px !important;
+}
+
+.name {
+    font-weight: 500,
+}
+
+.tickIcon {
+    align-self: center;
+    margin-left: 4px;
+}
