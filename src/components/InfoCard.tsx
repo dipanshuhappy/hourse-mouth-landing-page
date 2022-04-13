@@ -1,23 +1,12 @@
 import { width } from '@mui/system';
 import React from 'react';
-interface InfoCardInterface{
-    src:string,
-    text:string
-}
+import { InfoCardInterface } from '../models/InfoCardInterface';
+import styles from "../styles/InfoCard.module.css"
 function InfoCard({src,text}:InfoCardInterface) {
     return (
-        <div style={{
-            width:"300px",
-            height:"300px",
-            margin:"40px"
-        }}>
-            <img style={
-                {
-                    width:"147px",
-                    height:"147px"
-                }
-            } src={src}/>
-            <p>{text}</p>
+        <div className={styles.root}>
+            <img width="147px" height="147px" src={src}/>
+            <p className={styles.text}>{text}</p>
         </div>
     );
 }

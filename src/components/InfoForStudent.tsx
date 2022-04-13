@@ -2,7 +2,8 @@ import { Box } from '@mui/material';
 import React from 'react';
 import InfoCard from './InfoCard';
 import signUpImage from "../assets/sign_up.png"
-interface InfoCardInterface{}
+import calender from "../assets/calender.png"
+import chatBubble from "../assets/chat_bubble_over_head.png"
 function InfoForStudent() {
     return (
         <Box sx={{
@@ -10,8 +11,8 @@ function InfoForStudent() {
             justifyContent:"center"
         }}>
             <InfoCard src={signUpImage} text="STEP 1 : REGISTER AS A STUDENT/PARENT ON HORSE’S MOUTH"/>
-            <InfoCard src={signUpImage} text="STEP 1 : REGISTER AS A STUDENT/PARENT ON HORSE’S MOUTH"/>
-            <InfoCard src={signUpImage} text="STEP 1 : REGISTER AS A STUDENT/PARENT ON HORSE’S MOUTH"/>
+            <InfoCard src={calender} text="Step 2 : SCHEDULE A CALL WITH THE BEST MENTORS AROUND THE WORLD"/>
+            <InfoCard src={chatBubble} text="Step 3 : LEARN FROM YOUR MENTOR AND MAKE BETTER COLLEGE DECISIONS"/>
         </Box>
     );
 }

@@ -1,0 +1,10 @@
+.root{
+    width: 300px;
+    height: 300px;
+    margin: 40px;
+}
+.text{
+    color: #6E3CBC;
+    font-weight: 600;
+    font-size: 20px;
+}
