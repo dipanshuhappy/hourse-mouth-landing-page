@@ -6,7 +6,7 @@ import styles from "../styles/ImageInfoSession.module.css"
 function ImageInfoSession() {
     return (
         <div className={styles.root}>
-            <img src={hourseMouthInfo} />
+            <img width="80%" height="80%" src={hourseMouthInfo} />
             <div className={styles.supportingBrands}>
                 <img width="30%" src={startUpImage} />
                 <img height="30%" width="30%" src={hactchery} />

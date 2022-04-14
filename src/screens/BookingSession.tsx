@@ -4,7 +4,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import bookingSessionImage from "../assets/student_mentor_interacting.png"
 import styles from "../styles/BookingSession.module.css"
 function BookingSession() {
-    const isMobile = !useMediaQuery('(min-width:600px)')
+    const isMobile = !useMediaQuery('(min-width:800px)')
     return (
         <Box className={styles.root}>
             <Box className={styles.mainDiv}>

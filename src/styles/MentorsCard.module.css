@@ -3,6 +3,7 @@
     height: 200px;
     position: relative;
     border-radius: 12px !important;
+    margin-top: 32px;
 }
 
 .avatar {

@@ -12,10 +12,12 @@
     margin: 0px;
     line-height: 1.5;
     color: rgb(110, 60, 188);
-    font-size: 4rem;
-    font-weight: 400;
+    font-size: 3rem;
+    font-weight: 600;
 }
 .image{
+    width: 50%;
+    height: 50%;
     margin-bottom: 64px;
 }
 .subTitle {
@@ -31,6 +33,9 @@
 @media (max-width:860px){
     .mainDiv{
         width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 16px;
     }
    .title{
        font-weight: bold;
