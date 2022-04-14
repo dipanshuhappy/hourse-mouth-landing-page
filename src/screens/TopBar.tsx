@@ -6,7 +6,7 @@ function TopBar() {
     return (
         <Box 
         className={styles.root}>
-            <img className={styles.image} src={logo} /> 
+            <img alt="Image" className={styles.image} src={logo} /> 
             <Box className={styles.buttonContainer}>
                 <Button className={styles.button}  variant="outlined">LOGIN</Button>
                 <Button className={styles.button} style={{marginLeft:"8px"}} variant="contained">SIGN UP</Button>

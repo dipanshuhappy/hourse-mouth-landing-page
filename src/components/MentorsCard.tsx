@@ -1,8 +1,7 @@
-import { Avatar, Chip, Grid, Paper } from '@mui/material';
+import { Avatar, Grid, Paper } from '@mui/material';
 import React from 'react';
 import Tick from '../assets/Tick';
 import HorseMouthChip from './HorseMouthChip';
-import image from "../assets/anuj.png"
 import styles from "../styles/MentorsCard.module.css"
 import { MentorInterface } from '../models/MentorInterface'
 function MentorsCard({name,avatar,collegeName,branch,specialization,type}:MentorInterface) {
