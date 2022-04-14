@@ -1,13 +1,15 @@
-import { Box } from '@mui/material';
+import { Box, useMediaQuery } from '@mui/material';
 import React from 'react';
 import InfoCard from './InfoCard';
 import signUpImage from "../assets/sign_up.png"
 import calender from "../assets/calender.png"
 import piggyBank from "../assets/piggy_bank.png"
 function InfoForMentors() {
+    const isMobile = !useMediaQuery('(min-width:600px)')
     return (
         <Box sx={{
             display:"flex",
+            flexDirection:isMobile?"column":"row",
             justifyContent:"center"
         }}>
             <InfoCard src={signUpImage} text="Step 1 : REGISTER AS A MENTOR on Horse’s Mouth"/>

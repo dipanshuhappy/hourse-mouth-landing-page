@@ -5,6 +5,9 @@
     margin-top: 4px;
     width: 90%;
 }
+.image{
+    height:64px;
+}
 .buttonContainer{
     align-self: center;
 }
@@ -12,4 +15,10 @@
     border-radius: 12px !important;
     font-size: large !important;
     font-weight: bold !important;
+}
+@media (max-width:860px){
+    .image{
+        width: 30%;
+        height: 11%;
+    }
 }
